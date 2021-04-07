@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/example-broadcast', function(){
+    broadcast(new \App\Events\ExampleBroadcastEvent);
+    return date('Y-m-d h:i:s A');
+});
+

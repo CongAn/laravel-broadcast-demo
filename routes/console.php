@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+
+Artisan::command('example-broadcast', function () {
+    broadcast(new \App\Events\ExampleBroadcastEvent());
+    $this->comment("news example-broadcast-event");
+})->describe('Send example-broadcast-event');
