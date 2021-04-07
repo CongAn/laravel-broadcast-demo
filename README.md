@@ -1,8 +1,8 @@
-# laravel-broadcasting-demo
+# laravel-broadcast-demo
 
 ## 运行 Laradock 开发环境
 ```bash
-cd laradock-laravel-broadcasting-demo
+cd laradock-laravel-broadcast-demo && cp env-example .env
 docker-compose up -d
 docker-compose exec workspace /bin/bash -c 'composer install && cp .env.example .env && php artisan key:generate'
 docker-compose exec workspace /bin/bash -c 'npm install'
@@ -20,4 +20,4 @@ docker-compose exec workspace /bin/bash -c 'npm install'
 
 
 ## License
-The Laravel broadcasting-demo is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel broadcast-demo is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
