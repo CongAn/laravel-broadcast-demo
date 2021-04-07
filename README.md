@@ -5,12 +5,18 @@
 
 文档没时间写了，但是可以查看[提交记录](https://github.com/CongAn/laravel-broadcast-demo/commits/main)的解释来查看修改的原因。
 
-<h2 style="color: red;">如果帮助到你了，请留个小星星支持，也能让更多人得到帮助。</h2>
+<h2>
+```diff
+-! 如果帮助到你了，请留个小星星🌟支持，也能让更多人得到帮助。!-
+```
+</h2>
+
 
 ## 参考来源
 [laravel广播系统文档](https://learnku.com/docs/laravel/8.x/broadcasting/9388)
 
 [Laravel Broadcasting广播机制(Redis + socket.io)-学习实例](https://blog.csdn.net/nsrainbow/article/details/80428769)
+
 
 ## 运行 Laradock 开发环境
 ```bash
@@ -19,6 +25,7 @@ docker-compose up -d
 docker-compose exec workspace /bin/bash -c 'composer install && cp .env.example .env && php artisan key:generate'
 docker-compose exec workspace /bin/bash -c 'npm install'
 ```
+
 
 ## 开始
 ### 打包js文件到public
@@ -43,6 +50,7 @@ php artisan queue:work
 
 
 ## 遇到问题与解决
+
 ### web端的laravel-echo接收不到广播信息。
 **症状：** redis数据正常，队列处理正常，laravel-echo-server接收广播正常，laravel-echo成功连接laravel-echo-server，但并未加入频道。
 
