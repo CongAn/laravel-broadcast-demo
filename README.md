@@ -6,9 +6,11 @@
 文档没时间写了，但是可以查看[提交记录](https://github.com/CongAn/laravel-broadcast-demo/commits/main)的解释来查看修改的原因。
 
 <h2>
+    
 ```diff
 -! 如果帮助到你了，请留个小星星🌟支持，也能让更多人得到帮助。!-
 ```
+
 </h2>
 
 
